@@ -1,0 +1,164 @@
+.container {
+    width: 250px;
+    height: auto;
+    border-radius: 20px; /*شكل ايقونه التي توجد بها الصوره */
+    background-color: #f2f2f2;
+    padding: 10px; /* المسافه بين كل صوره */
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    margin-top: 80px; /* المسافة بين العناصر وأعلى الصفحة */
+
+}
+
+/*اسم الفرقه والوصف*/
+.item {
+    position: fixed;
+    right: 150px;
+    top: 5%;
+    width: 200px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #100339;
+    color: #ffffff; /* تعيين لون الخط هنا */
+}
+
+
+.item span:first-child {
+    margin-right: 10px; /* تحكم في المسافة بين النصوص الجانبية */
+}
+
+.item span:last-child {
+    margin-left: 10px; /* تحكم في المسافة بين النصوص الجانبية */
+}
+
+  
+
+  
+  .home-button i {
+    display: inline-block;
+  }
+
+.image {
+    width: 250px;
+    height: 300px;
+    border-radius: 10%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+    color: #000000;
+    margin: 20px auto;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, #100339, #100339);
+    color: #ffffff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #100339;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px; /* تعديل هنا */
+}
+
+.logo-text {
+color: #ffffff;
+font-size: 18px;
+font-weight: bold;
+text-align: left;
+margin-left: -15px; /* قم بتعديل القيمة حسب الحاجة */
+}
+
+
+.menu-icon {
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200%;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin-bottom: 4px;
+}
+
+/*الشريط الجانبي */
+.sidebar {
+    width: 100px;
+    height: 500px;
+    background-color: #100339;
+    position: absolute;
+    top: 60px;
+    right: 0; /* تعديل هنا */
+    transition: transform 0.3s ease;
+    transform: translateX(100%); /* تعديل هنا */
+}
+
+.sidebar a {
+display: block;
+background-color: rgb(7, 7, 7);
+color: #ffffff;
+text-decoration: none;
+padding: 10px;
+margin-bottom: 10px;
+}
+.sidebar.active {
+    transform: translateX(0);
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
